@@ -5,7 +5,7 @@
 I wanted to learn more about how Operating Systems work so I began this project of creating an OS from "scratch."
 
 ### How does it work?
-Uses gcc-cross-x86_64-elf toolchain, NASM to complile assembly, GRUB to create the ISO, and QEMU to run the iso.
+Uses gcc-cross-x86_64-elf toolchain, NASM to complile assembly, GRUB for the bootloader, and QEMU to run the iso.
 
 ### Notable Features
 TBA
