@@ -31,8 +31,11 @@ void kernel_main()
     print_clear();
     print_str("Enter some string: ");
     
-    while(1){
-        print_char((get_keyboard_input()));
+    int max_len = 50;
+    char str[max_len];
+    if (input_str(str, max_len)) {
+        print_str("\nYour name is: ");
+        print_str(str);
     }
-
+    
 }

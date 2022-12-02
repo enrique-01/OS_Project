@@ -12,6 +12,7 @@ struct Char* buffer = (struct Char*) 0xb8000;
 size_t col = 0;
 size_t row = 0;
 uint8_t color = PRINT_COLOR_WHITE | PRINT_COLOR_BLACK << 4;
+size_t input_pos = 0;
 
 void clear_row(size_t row) 
 {
@@ -23,6 +24,17 @@ void clear_row(size_t row)
     for (size_t col = 0; col < NUM_COLS; col++) {
         buffer[col + NUM_COLS * row] = empty;
     }
+}
+
+void clear_col() {
+    col--;
+    struct Char empty = (struct Char) {
+        character: ' ',
+        color: color,
+    };
+    buffer[col + NUM_COLS * row] = empty;
+    input_pos--;
+    //move_cursor(col, row);
 }
 
 void print_clear()

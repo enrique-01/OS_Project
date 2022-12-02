@@ -15,5 +15,3 @@ TBA
 [CodePulse on YouTube](https://www.youtube.com/watch?v=wz9CZBeXR6U&t=1058s "CodePulse on YouTube") was used as a starting point to get something booting.
 
 [OSDev.org](https://wiki.osdev.org/Main_Page "OSDev.org") information and resources on everything OS related in general. 
-
-![](https://img.shields.io/github/stars/pandao/editor.md.svg) ![](https://img.shields.io/github/forks/pandao/editor.md.svg) 
